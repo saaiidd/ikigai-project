@@ -262,3 +262,13 @@ canvas#matrixCanvas {
     z-index: -1;
     /* Ensures it stays behind all other content */
 }
+
+@media (max-width:550px) {
+    .text-container h2 {
+        font-size: 1.9rem;
+    }
+
+    .text-container p {
+        padding-inline: 1.3rem;
+    }
+}

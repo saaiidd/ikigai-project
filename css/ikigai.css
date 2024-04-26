@@ -273,7 +273,7 @@ canvas#matrixCanvas {
     /* Ensures it stays behind all other content */
 }
 
-@media (max-width:550px) {
+@media (max-width:48rem) {
     .text-container h2 {
         font-size: 1.9rem;
     }

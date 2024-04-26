@@ -139,7 +139,6 @@ html {
 
 
 body, html {
-    overflow: hidden;
     height: 100%;
 }
 
@@ -151,6 +150,15 @@ body {
     align-items: center;
     justify-content: center;
     -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Chrome/Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -o-user-select: none;
+    /* Opera */
+    user-select: none;
+    /* Default */
 }
 
 

@@ -52,6 +52,7 @@ body {
     /* Centers content vertically */
     justify-content: center;
     /* Centers content horizontally */
+    -webkit-user-select: none;
     user-select: none;
     /* Disables text selection */
 }
@@ -120,22 +121,7 @@ p {
     /* Centers content in contact section */
 }
 
-.wrapper-email-section {
-    display: flex;
-    /* Enables flexbox layout */
-    align-items: center;
-    /* Centers items vertically */
-    width: 70%;
-    /* Sets width relative to parent */
-    background-color: #313139;
-    /* Sets background color */
-    max-width: 300px;
-    /* Limits maximum width */
-    margin-top: 20px;
-    /* Adds top margin */
-    border-radius: 20px;
-    /* Rounds corners */
-}
+
 
 /* Button Styling */
 .contact {
@@ -154,8 +140,8 @@ p {
     justify-content: center;
     overflow: hidden;
     transition: box-shadow .15s, transform .15s;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;

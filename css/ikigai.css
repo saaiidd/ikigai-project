@@ -57,7 +57,8 @@ body {
     /* Disables text selection */
 }
 
-img {
+img,
+picture {
     display: block;
     /* Removes default inline display */
     max-width: 100%;
@@ -73,6 +74,28 @@ a {
     /* Changes anchor tag to inline-block for better control */
     text-decoration: none;
     /* Removes underline from links */
+}
+
+
+/* REMOVE ANIMATIONS FOR THE PEOPLE WHO TURNED THEM OFF */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* MAKE FORM ELEMENTS EASIER TO WORK WITH */
+input,
+button,
+textarea,
+select {
+    font: inherit;
 }
 
 p {
